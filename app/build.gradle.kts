@@ -49,6 +49,8 @@ android {
 }
 
 dependencies {
+    api(platform("io.opentelemetry.android:opentelemetry-android-bom:1.0.1-alpha"))
+    implementation("io.opentelemetry.android:android-agent")
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
