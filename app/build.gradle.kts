@@ -2,6 +2,7 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
     alias(libs.plugins.compose.compiler)
+    id("io.embrace.gradle")
 }
 
 android {
@@ -47,6 +48,7 @@ android {
 }
 
 dependencies {
+    implementation("io.embrace:embrace-android-sdk:8.1.0")
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
